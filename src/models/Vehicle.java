@@ -1,6 +1,9 @@
 package models;
 
-public abstract class Vehicle {
+import java.io.Serializable;
+
+// implements Seriazable interface for I/O mgmt
+public abstract class Vehicle implements Serializable {
     protected String id;
     protected String brand;
     protected boolean available = true;
